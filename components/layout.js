@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 const Layout = (props) => {
-  const [ navbarOpen, setNavbarOpen ] = useState(true);
+  const [ navbarOpen, setNavbarOpen ] = useState(false);
   const ref = useRef();
   useEffect(() => {
     const handler = (e) => {
@@ -30,8 +30,8 @@ const Layout = (props) => {
           )}
         </button>
         
-        <header id="header">
-          <div className="d-flex flex-column" ref={ref} onClick={() => setNavbarOpen((prev) => !prev)}>
+        <header id="header" ref={ref} >
+          <div className="d-flex flex-column">
             <div className="profile">
               <Image
                 src="/img/me.jpeg"
@@ -48,7 +48,7 @@ const Layout = (props) => {
               </div>
             </div>
 
-            <div id="navbar" className="nav-menu navbar">
+            <div id="navbar" className="nav-menu navbar" onClick={() => setNavbarOpen((prev) => !prev)}>
               <ul>
                 <li><a href="#hero" className="nav-link"><i className="bi bi-house"></i><span>Home</span></a></li>
                 <li><a href="#about" className="nav-link"><i className="bi bi-person"></i><span>About</span></a></li>

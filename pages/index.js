@@ -209,6 +209,119 @@ const IndexPage = () => {
 
         </div>
       </section>
+
+      <section id="services" class="services">
+        <div class="container">
+
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bi bi-binoculars"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bi bi-brightness-high"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contact" className="contact">
+      <div className="container">
+
+        <div className="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div className="row" data-aos="fade-in">
+
+          <div className="col-lg-5 d-flex align-items-stretch">
+            <div className="info">
+              <div className="address">
+                <i className="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Chiang Mai, Thailand 50000</p>
+              </div>
+
+              <div className="email">
+                <i className="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div className="phone">
+                <i className="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+66 12 345 6789</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.1334151886986!2d99.02370390581586!3d18.797231177207436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da254676f88ae3%3A0x82d853f3078e7411!2sHillside%20Condo%208!5e0!3m2!1sen!2sth!4v1676881090365!5m2!1sen!2sth" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+          <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form className="email-form">
+              <div className="row">
+                <div className="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" className="form-control" id="name" required />
+                </div>
+                <div className="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" className="form-control" name="email" id="email" required />
+                </div>
+              </div>
+              <div className="form-group">
+                <label for="name">Subject</label>
+                <input type="text" className="form-control" name="subject" id="subject" required />
+              </div>
+              <div className="form-group">
+                <label for="name">Message</label>
+                <textarea className="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div className="my-3">
+                <div className="loading">Loading</div>
+                <div className="error-message"></div>
+                <div className="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div className="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
     </main>
     </div>
   )
