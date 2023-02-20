@@ -100,7 +100,8 @@ const IndexPage = () => {
               <h3 className="resume-title">Summary</h3>
               <div className="resume-item pb-0">
                 <h4>Sirisak Chantanate</h4>
-                <p><em>Currently a Solution Area Specialist (Azure) looking for transition into the professional cloud industry as an Cloud Engineer. I have experience in client-facing positions and have achieved 2 AWS certifications and 1 Azure Certification whilst working full-time.</em></p>
+                <p><em>Currently a Solution Area Specialist (Azure) looking for transition into the professional cloud industry as an Cloud Engineer/Software Engineer. 
+                  I have experience in client-facing positions and have achieved 2 AWS certifications and 1 Azure Certification whilst working full-time.</em></p>
                 <ul>
                   <li>Chiang Mai, Thailand</li>
                 </ul>
