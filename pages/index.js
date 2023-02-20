@@ -197,7 +197,7 @@ const IndexPage = () => {
                   width={450}
                   height={500}
                 />
-                <div class="portfolio-links">
+                <div className="portfolio-links">
                   <a href="/img/me.jpeg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 1"><i className="bi bi-plus"></i></a>
                   <a href="#" title="More Details"><i className="bi bi-link"></i></a>
                 </div>
