@@ -16,13 +16,15 @@ const Layout = (props) => {
       
     };
 
-    document.body.className = navbarOpen ? '' : 'mobile-nav-active';
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      document.body.className = navbarOpen ? '' : 'mobile-nav-active';
+    }
     
   }, [navbarOpen]);
   return (
     <div>
       <button
-      className="mobile-nav-toggle d-xl-none"
+      className="d-xl-none"
       style={{ borderRadius: '50%' }}
       onClick={() => setNavbarOpen((prev) => !prev)}
       >
