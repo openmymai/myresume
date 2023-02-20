@@ -5,35 +5,17 @@ const Layout = (props) => {
   const [ navbarOpen, setNavbarOpen ] = useState(false);
   const ref = useRef();
   useEffect(() => {
-    const handler = (e) => {
-      if (
-        navbarOpen &&
-        ref.current &&
-        !ref.current.contains(e.target)
-      ) {
-        setNavbarOpen(false);
-      }
-      
-    };
-
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      document.body.className = navbarOpen ? '' : 'mobile-nav-active';
-    }
-    
+    document.body.className = !navbarOpen ? '' : 'mobile-nav-active';
   }, [navbarOpen]);
   return (
     <div>
-      <button
-      className="d-xl-none"
-      style={{ borderRadius: '50%' }}
-      onClick={() => setNavbarOpen((prev) => !prev)}
-      >
-        {navbarOpen ? (
-          <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+        {!navbarOpen ? (
+          <i className="bi bi-list mobile-nav-toggle d-xl-none" onClick={() => setNavbarOpen((prev) => !prev)}></i>
         ) : (
-          <i className="bi bi-x mobile-nav-toggle d-xl-none"></i>
+          <i className="bi bi-x mobile-nav-toggle d-xl-none" onClick={() => setNavbarOpen((prev) => !prev)}></i>
         )}
-      </button>
+
       
       <header id="header" ref={ref} onClick={() => setNavbarOpen((prev) => !prev)}>
         <div className="d-flex flex-column">

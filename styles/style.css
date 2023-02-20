@@ -220,9 +220,13 @@ h6 {
   border-radius: 50px;
   cursor: pointer;
 }
-
+/*
 .mobile-nav-active {
   overflow: hidden;
+}
+*/
+.mobile-nav-active {
+  width: 100%;
 }
 
 .mobile-nav-active #header {
