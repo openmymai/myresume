@@ -3,10 +3,20 @@ import Image from 'next/image';
 
 const Layout = (props) => {
   const [ navbarOpen, setNavbarOpen ] = useState(false);
+  const [ scroll, setScroll ] = useState(false);
+
   const ref = useRef();
+  
   useEffect(() => {
     document.body.className = !navbarOpen ? '' : 'mobile-nav-active';
   }, [navbarOpen]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScroll(window.scrollY > 100);
+    });
+  },[]);
+
   return (
     <div>
 
@@ -50,6 +60,7 @@ const Layout = (props) => {
       <div>
         {props.children}
       </div>
+      <a href="#" className={`back-to-top d-flex align-items-center justify-content-center${scroll ? ' active' : ''}`}><i className="bi bi-arrow-up-short" /></a>
     </div>
   );
 }

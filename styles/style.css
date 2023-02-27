@@ -43,7 +43,7 @@ h6 {
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
-  
+  position: fixed;
   visibility: hidden;
   opacity: 0;
   right: 15px;
