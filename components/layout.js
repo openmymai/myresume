@@ -1,16 +1,36 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
+const useWindowSize = () => {
+  const [ windowSize, setWindowSize ] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  },[]);
+
+  return windowSize;
+}
+
 const Layout = (props) => {
   const [ navbarOpen, setNavbarOpen ] = useState(false);
   const [ scroll, setScroll ] = useState(false);
 
+  const size = useWindowSize();
   const ref = useRef();
-  
-  useEffect(() => {
-    document.body.className = !navbarOpen ? '' : 'mobile-nav-active';
-  }, [navbarOpen]);
-
+  console.log(size.width);
   useEffect(() => {
     window.addEventListener('scroll', () => {
       setScroll(window.scrollY > 100);
@@ -19,6 +39,7 @@ const Layout = (props) => {
 
   return (
     <div>
+      <body className={`${!navbarOpen || size.width > 1200 ? '' : 'mobile-nav-active'}`}>
 
         {!navbarOpen ? (
           <i className="bi bi-list mobile-nav-toggle d-xl-none" onClick={() => setNavbarOpen((prev) => !prev)}></i>
@@ -60,7 +81,17 @@ const Layout = (props) => {
       <div>
         {props.children}
       </div>
+      <footer id="footer">
+        <div class="container">
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> &nbsp;
+            Implement using <a href="https://nextjs.org/">NextJS</a>&nbsp; 
+            by <a href="https://openmymai.github.io">Sirisak Chantanate (Mai)</a>
+          </div>
+        </div>
+      </footer>
       <a href="#" className={`back-to-top d-flex align-items-center justify-content-center${scroll ? ' active' : ''}`}><i className="bi bi-arrow-up-short" /></a>
+      </body>
     </div>
   );
 }
