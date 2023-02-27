@@ -11,7 +11,8 @@ const IndexPage = () => {
       strings: [
         'Solution Architect',
         'Software Engineer',
-        'Developer'
+        'Network Specialist',
+        'CCIE R&S #18148'
       ],
       typeSpeed: 60,
       backSpeed: 40,
