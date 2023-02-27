@@ -25,7 +25,7 @@ const App = ({ Component, pageProps }) => {
     return (
       <>
         <Head>
-          <title>Life Learning</title>
+          <title>Mai Resume</title>
           <link rel="shortcut icon" href="/img/favicon.ico" />
         </Head>
         <Layout>
