@@ -119,24 +119,33 @@ const IndexPage = () => {
               <h3 className="resume-title">Licenses &amp; Certifications</h3>
               <div className="resume-item">
                 <h4>AWS</h4>
-                <p>AWS Certified Solution Architect Professional</p>
-                <p>AWS Certified Cloud Practitioner</p>
-                <p>AWS Migration Ambassador Foundations</p>
+                <p><a href="https://www.credly.com/badges/9644a235-556b-4119-b4fc-eb1f2eb0c28e/public_url">AWS Certified Solution Architect Professional</a></p>
+                <p><a href="https://www.credly.com/badges/9e57e460-8eeb-4e71-a96b-af7e7f2df741/public_url">AWS Certified Cloud Practitioner</a></p>
+                <p><a href="https://www.credly.com/badges/e714b831-f3ff-4e8d-8cb0-645382d24110/public_url">AWS Migration Ambassador Foundations</a></p>
               </div>
               <div className="resume-item">
                 <h4>Azure</h4>
-                <p>Azure Fundamentals</p>
+                <p><a href="https://www.credly.com/badges/7c0cd40e-43a2-42a7-bed3-a4fd6cf1b888/public_url">Azure Fundamentals</a></p>
               </div>
               <div className="resume-item">
                 <h4>Cisco</h4>
-                <p>Cisco Certificate Internetwork Expert (CCIE R&S #18148)</p>
+                <p><a href="https://www.credly.com/badges/940673b6-deae-4b5a-9e31-4d70f65753f9/public_url">Cisco Certificate Internetwork Expert (CCIE R&S #18148)</a></p>
               </div>
             </div>
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 className="resume-title">Professional Experience</h3>
+            <h3 className="resume-title">Professional Experience</h3>
+              <div className="resume-item">
+                <h4>Software Engineer &amp; Developer</h4>
+                <h5>Jan 2018 - Present</h5>
+                <p><em>Freelance</em></p>
+                <ul>
+                  <li>Responsible for the analysis, design, testing, development and maintenance of best in class software experiences.</li>
+                  <li>Adept with the agile software development lifecycle and DevOps principles.</li>
+                </ul>
+              </div>
               <div className="resume-item">
                 <h4>Solution Area Specialist</h4>
-                <h5>Nov 2022 - Present</h5>
+                <h5>Nov 2022 - Jan 2023</h5>
                 <p><em>Denave, Kuala Lumpur, MY </em></p>
                 <ul>
                   <li>Support Tele Sales to drive large and complex deals with advance workload in SMB.</li>
@@ -152,15 +161,6 @@ const IndexPage = () => {
                 <ul>
                   <li>Acquire new leads, new opportunities and new projects from corporates and enterprises through pre-sales efforts and activities, customer engagements and sales efforts and activities.</li>
                   <li>Supporting the ability for cloud solutions sales and selling and delivering cloud migration services.</li>
-                </ul>
-              </div>
-              <div className="resume-item">
-                <h4>Software Engineer &amp; Developer</h4>
-                <h5>Jan 2018 - Present</h5>
-                <p><em>Freelance</em></p>
-                <ul>
-                  <li>Responsible for the analysis, design, testing, development and maintenance of best in class software experiences.</li>
-                  <li>Adept with the agile software development lifecycle and DevOps principles.</li>
                 </ul>
               </div>
             </div>
