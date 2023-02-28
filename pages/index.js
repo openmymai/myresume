@@ -12,7 +12,7 @@ const IndexPage = () => {
         'Solution Architect',
         'Software Engineer',
         'Network Specialist',
-        `CCIE R&S #18148`
+        `CCIE Routing and Switching #18148`
       ],
       typeSpeed: 60,
       backSpeed: 40,
